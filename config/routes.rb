@@ -4,6 +4,7 @@ Blog::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get '/:locale' => 'welcome#index'
   root 'welcome#index'
 
   # Example of regular route:
@@ -13,10 +14,11 @@ Blog::Application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  resources :posts do
-    resources :comments
+  scope "/:locale" do
+    resources :posts do
+      resources :comments
+    end
   end
-
   # Example resource route with options:
   #   resources :products do
   #     member do

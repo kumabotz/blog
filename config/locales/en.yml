@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: Hello
+  hello: Hello world!
+  hello_flash: Hello flash!
+  welcome: <b>welcome!</b>
+  hello_html: <b>hello!</b>
+  title:
+    html: <b>title!</b>
+  thanks: "Thanks %{name}!"
+  inbox:
+    one: one message
+    other: '%{count} messages'

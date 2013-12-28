@@ -1,2 +1,13 @@
-<h1><%= t :hello %>, Rails!</h1>
+<h1><%= t :hello %></h1>
+<p><%= flash[:notice] %></p>
+<p><%= t :thanks, name: 'Bill' %></p>
+<p><%= l Time.now, format: :short %></p>
+<p><%= t :inbox, count: 2 %></p>
+<p><%= t :inbox, count: 1 %></p>
+
+<p><%= t :welcome %></p>
+<p><%= raw t :welcome %></p>
+<p><%= t :hello_html %></p>
+<p><%= t 'title.html' %></p>
+
 <%= link_to "My Blog", controller: "posts" %>

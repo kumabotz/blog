@@ -1,3 +1,31 @@
 ---
 zh-cn:
-  hello: 你好
+  hello: 你好世界！
+  hello_flash: 你好飞乐思！
+  welcome: <b>欢迎!</b>
+  hello_html: <b>你好!</b>
+  title:
+    html: <b>主题!</b>
+  thanks: "谢谢 %{name}!"
+  inbox:
+    one: 1个信息
+    other: '%{count}个信息'
+
+  date:
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+  time:
+    formats:
+      short: ! '%b%d日 %H:%M'
